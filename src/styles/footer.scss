@@ -1,0 +1,117 @@
+//SASS PAGE
+//$base-color: #c6538c;
+// $base-color: #d61375;
+$base-color: #e60b0e;
+$blac-color:#212121;
+// $back-opacity: rgb(33, 33, 33,.9);
+$black-opacity: #003464;
+$back-opacity: rgb(0, 0, 0,.9);
+$white-kolor: #fff;
+$white-opacity:gray;
+$white-black:#f7f7f7;
+
+.footer{
+    background: $back-opacity;
+    .news-letters{
+        background:none;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 13px;
+        padding: 40px;
+
+        .mission{
+            text-align: start;
+            h3{
+                color: $white-kolor;
+                font-size: 25px;
+            }
+            p{
+                color: $white-opacity;
+                font-size: 13px;
+            }
+        }
+        .domain{
+            text-align: start;
+            h3{
+                color: $white-kolor;
+                font-size: 25px;
+            }
+            p{
+                color: $white-opacity;
+                font-size: 13px;
+            }
+        }
+        .mailing{
+            // background: red;
+            padding: 2px;
+            // margin-bottom: 10px;
+            text-align: start;
+            h4{
+                margin-bottom: 3px;
+                font-size: 15px;
+                color: #d8d8d8;
+            }
+            p{
+                font-size: 12px;
+                margin-bottom: 15px;
+                color: grey;
+            }
+            .control{
+                display: flex;
+                flex-direction: column;
+                // background: blue;
+          
+                label{
+                    font-size: 11px;
+                    color: grey;
+                }
+                input{
+                    border: 2px solid gray;
+                    // border: none;
+                    border-radius: 5px;
+                    padding: 10px 5px;
+                    // background: rgb(0, 0, 0);
+                    background: none;
+                    color: rgb(210, 210, 210);
+                }
+                button{
+                    outline: none;
+                    background: $base-color;
+                    border: none;
+                    padding: 8px 2px;
+                    width: 140px;
+                    margin-top: 5px;
+                    color: $white-kolor;
+                    cursor: pointer;
+                }
+                .checkbox{
+                    display: flex;
+                    align-items: center;
+                    margin: 5px;
+                    input{
+                        border: 1px solid grey;
+                        background-color: transparent;
+                    }
+                }
+                span{
+                    color: #635b5b;
+                }
+            }
+        } 
+    }
+    .foot{
+        color: $white-kolor;
+        .links{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        p{
+            font-size: 12px;
+            a{
+                color: $white-kolor;
+            }
+        }
+    }
+}
